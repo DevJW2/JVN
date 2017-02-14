@@ -14,11 +14,12 @@
 
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
-  n=1       time: 
-  n=10      time: 
-  n=100     time: 
+  n=1       time: 0 milliseconds
+  n=10      time: 0 milliseconds
+  n=100     time: 0 milliseconds
+  n=1000    time: 1 milliseconds
   ...
-  n=<huge>  time: 
+  n=<huge>  time: > 3674 milliseconds at 10,000,000
 
   ANALYSIS:
   <INSERT YOUR RESULTS ANALYSIS HERE>
@@ -37,13 +38,13 @@ public class MergeSortTester
     public static void main( String[] args ) 
     {
 	MergeSort test = new MergeSort();
-	int[] arr = new int[10];
+	int[] arr = new int[10000000];
 	for(int i = 0; i < arr.length; i++){
 	    arr[i] = (int)(Math.random() * (arr.length - 1)) + 1;
 	}
 	
 	long startTime = System.currentTimeMillis();
-	System.out.println(test.sort(arr));
+	test.sort(arr);
 	long endTime = System.currentTimeMillis();
 	System.out.println("Total Time: " + (endTime - startTime));
     }//end main
