@@ -90,15 +90,15 @@ public class MergeSortTester
 	    sum4 += (endTime4 - startTime4);
 	}
 	System.out.println("Size: 10 million");
-	System.out.println("Mean Time: " + (sum/10));
+	System.out.println("Mean Time: " + (sum/10) / 1000000f);
 	System.out.println("Size: 1000");
-	System.out.println("Mean Time: " + (sum1/10));
+	System.out.println("Mean Time: " + (sum1/10) / 1000000f);
 	System.out.println("Size: 100");
-	System.out.println("Mean Time: " + (sum2/10));
+	System.out.println("Mean Time: " + (sum2/10) / 1000000f);
 	System.out.println("Size: 10");
-	System.out.println("Mean Time: " + (sum3/10));
+	System.out.println("Mean Time: " + (sum3/10) / 1000000f);
 	System.out.println("Size: 1");
-	System.out.println("Mean Time: " + (sum4/10));
+	System.out.println("Mean Time: " + (sum4/10) / 1000000f);
     }//end main
 
 }//end class
