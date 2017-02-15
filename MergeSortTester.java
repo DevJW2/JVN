@@ -53,7 +53,10 @@ Because there are log(n) recursive levels each operating at linear n time, the o
 
 
   ANALYSIS:
-  <INSERT YOUR RESULTS ANALYSIS HERE>
+  Running the program, I calculated the mean of 10 runs of arrays that are in the size of 1, 10, 100, 1000, etc. Generating these
+  numbers, You can find that the results is as predicted and that the 1 array list size takes around 1.3 * 10^-4 milliseconds to run. While 
+  the 10 million list size takes around 99 milliseconds. While the the smaller array list sizes have means that are close to each other, the 10 million array
+  list size one, can alternate from 50 milliseconds to 130 milliseconds. 
   ======================================*/
 import java.lang.*;
 
