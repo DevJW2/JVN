@@ -2,7 +2,7 @@
 Hw#07
 
 https://docs.google.com/document/d/1s7OjcDA96sR8Jg14F3D2g_ePtzLhL2ksDIj_sAz0qu0/pub
-
+<img height = "700" src = "https://github.com/DevJW2/JVN/blob/master/pictures/graph.png?raw=true">
 Classification for MergeSort as nlog(n):
 
 ### Hypothesis:
@@ -33,3 +33,7 @@ at 2 element list level, it will be called 25 times
 However, the number of elements merge() is handling doubles. In the end, the calls halve each level, but the n doubles. The result is that each recursive level is a linear function of n.
 
 Because there are log(n) recursive levels each operating at linear n time, the overall efficiency is n * log(n).
+
+### Analysis:
+This is the graph of the 
+Using the regressions given by desmos it is indicative that the algorithm is as we hypothesized runtime of O(nlogn) due to its r^2 being closest to one compared to the other canidates for its O.
