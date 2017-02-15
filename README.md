@@ -1,8 +1,8 @@
 # JVN
 Hw#07
+Data x in size of the list y in miliseconds taken to run
 
-https://docs.google.com/document/d/1s7OjcDA96sR8Jg14F3D2g_ePtzLhL2ksDIj_sAz0qu0/pub
-<img height = "700" src = "https://github.com/DevJW2/JVN/blob/master/pictures/graph.png?raw=true">
+<img height = "600" src = "https://github.com/DevJW2/JVN/blob/master/pictures/data.png?raw=true">
 Classification for MergeSort as nlog(n):
 
 ### Hypothesis:
@@ -35,5 +35,7 @@ However, the number of elements merge() is handling doubles. In the end, the cal
 Because there are log(n) recursive levels each operating at linear n time, the overall efficiency is n * log(n).
 
 ### Analysis:
-This is the graph of the 
+This is the plot of the points and the lines of best fit using mx mx^2 and xlogbase2x
+<img height = "500" src = "https://github.com/DevJW2/JVN/blob/master/pictures/graph.png?raw=true">
+<img height = "300" src = "https://github.com/DevJW2/JVN/blob/master/pictures/regressions.png?raw=true">
 Using the regressions given by desmos it is indicative that the algorithm is as we hypothesized runtime of O(nlogn) due to its r^2 being closest to one compared to the other canidates for its O.
