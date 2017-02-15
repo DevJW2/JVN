@@ -14,12 +14,12 @@
   At each level 
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
-  n=1       time: 
-  n=10      time: 
-  n=100     time: 
-  n=1000    time: 
+  n=1       time: 1.3 x 10^-4 milliseconds
+  n=10      time: 0.0011 milliseconds
+  n=100     time: 0.014 milliseconds
+  n=1000    time: 0.15 milliseconds
   ...
-  n=<huge>  time:
+  n=<huge>  time: > 94 milliseconds
 
 HYPOTHESIS:
 Classification for MergeSort as nlog(n):
@@ -120,6 +120,7 @@ public class MergeSortTester
 	    long endTime4 = System.nanoTime();
 	    sum4 += (endTime4 - startTime4);
 	}
+
 	System.out.println("Size: 10 million");
 	System.out.println("Mean Time: " + (sum/10) / 1000000f);
 	System.out.println("Size: 1000");
@@ -130,6 +131,7 @@ public class MergeSortTester
 	System.out.println("Mean Time: " + (sum3/10) / 1000000f);
 	System.out.println("Size: 1");
 	System.out.println("Mean Time: " + (sum4/10) / 1000000f);
+	
     }//end main
 
 }//end class
