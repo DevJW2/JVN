@@ -13,13 +13,13 @@
   nlog(n)
   At each level 
   Mean execution times for dataset of size n:
-  Batch size: <# of times each dataset size was run>
+  Batch size: <10>
   n=1       time: 
   n=10      time: 
   n=100     time: 
   n=1000    time: 
   ...
-  n=<huge>  time:
+  n=1000000   time: 187.10117 ms
 
 HYPOTHESIS:
 Classification for MergeSort as nlog(n):
@@ -66,16 +66,53 @@ public class MergeSortTester
      *  YOUR APPARATUS FOR GENERATING EXECUTION 
      *  TIME DATA...>
      ******************************/
+    
     public static void main( String[] args ) 
     {
 	MergeSort test = new MergeSort();
-	int[] arr = new int[10000000];
-	int[] arr1 = new int[1000];
+	//	int[] arr = new int[1000000];
+	int[] arr1a = new int[9000];
+	int[] arr1b = new int[8000];
+	int[] arr1c = new int[7000];
+	int[] arr1d = new int[6000];
+	int[] arr1e = new int[5000];
+	int[] arr1f = new int[4000];
+	int[] arr1g = new int[3000];
+	int[] arr1h = new int[2000];
+	int[] arr1i = new int[1000];
+	int[] arr1 = new int[500];
 	int[] arr2 = new int[100];
 	int[] arr3 = new int[10];
 	int[] arr4 = new int[1];
-	for(int i = 0; i < arr.length; i++){
+	/*	for(int i = 0; i < arr.length; i++){
 	    arr[i] = (int)(Math.random() * (arr.length - 1)) + 1;
+	    }*/
+	for(int i = 0; i < arr1.length; i++){
+	    arr1a[i] = (int)(Math.random() * (arr1a.length - 1)) + 1;
+	}
+	for(int i = 0; i < arr1.length; i++){
+	    arr1b[i] = (int)(Math.random() * (arr1b.length - 1)) + 1;
+	}
+	for(int i = 0; i < arr1.length; i++){
+	    arr1c[i] = (int)(Math.random() * (arr1c.length - 1)) + 1;
+	}
+	for(int i = 0; i < arr1.length; i++){
+	    arr1d[i] = (int)(Math.random() * (arr1d.length - 1)) + 1;
+	}
+	for(int i = 0; i < arr1.length; i++){
+	    arr1e[i] = (int)(Math.random() * (arr1e.length - 1)) + 1;
+	}
+	for(int i = 0; i < arr1.length; i++){
+	    arr1f[i] = (int)(Math.random() * (arr1f.length - 1)) + 1;
+	}
+	for(int i = 0; i < arr1.length; i++){
+	    arr1g[i] = (int)(Math.random() * (arr1g.length - 1)) + 1;
+	}
+	for(int i = 0; i < arr1.length; i++){
+	    arr1h[i] = (int)(Math.random() * (arr1h.length - 1)) + 1;
+	}
+	for(int i = 0; i < arr1.length; i++){
+	    arr1i[i] = (int)(Math.random() * (arr1i.length - 1)) + 1;
 	}
 	for(int i = 0; i < arr1.length; i++){
 	    arr1[i] = (int)(Math.random() * (arr1.length - 1)) + 1;
@@ -90,21 +127,75 @@ public class MergeSortTester
 	    arr4[i] = (int)(Math.random() * (arr4.length - 1)) + 1;
 	}
 	int sum = 0;
+	int sum1a = 0;
+	int sum1b = 0;
+	int sum1c = 0;
+	int sum1d = 0;
+	int sum1e = 0;
+	int sum1f = 0;
+	int sum1g = 0;
+	int sum1h = 0;
+	int sum1i = 0;
 	int sum1 = 0;
 	int sum2 = 0;
 	int sum3 = 0;
 	int sum4 = 0;
 	for(int i = 0; i < 10; i++){
-	    long startTime = System.nanoTime();
+	    /*    long startTime = System.nanoTime();
 	    test.sort(arr);
 	    long endTime = System.nanoTime();
-	    sum += (endTime - startTime);
+	    sum += (endTime - startTime);*/
 	    
+	    long startTime1a = System.nanoTime();
+	    test.sort(arr1a);
+	    long endTime1a = System.nanoTime();
+	    sum1a += (endTime1a - startTime1a);
+	    
+	    long startTime1b = System.nanoTime();
+	    test.sort(arr1b);
+	    long endTime1b = System.nanoTime();
+	    sum1b += (endTime1b - startTime1b);
+
+	    long startTime1c = System.nanoTime();
+	    test.sort(arr1c);
+	    long endTime1c = System.nanoTime();
+	    sum1c += (endTime1c - startTime1c);
+
+	    long startTime1d = System.nanoTime();
+	    test.sort(arr1d);
+	    long endTime1d = System.nanoTime();
+	    sum1d += (endTime1d - startTime1d);
+	    
+	    long startTime1e = System.nanoTime();
+	    test.sort(arr1e);
+	    long endTime1e = System.nanoTime();
+	    sum1e += (endTime1e - startTime1e);
+	    
+	    long startTime1f = System.nanoTime();
+	    test.sort(arr1f);
+	    long endTime1f = System.nanoTime();
+	    sum1f += (endTime1f - startTime1f);
+	    
+	    long startTime1g = System.nanoTime();
+	    test.sort(arr1g);
+	    long endTime1g = System.nanoTime();
+	    sum1g += (endTime1g - startTime1g);
+
+	    long startTime1h = System.nanoTime();
+	    test.sort(arr1h);
+	    long endTime1h = System.nanoTime();
+	    sum1h += (endTime1h - startTime1h);
+
+	    long startTime1i = System.nanoTime();
+	    test.sort(arr1i);
+	    long endTime1i = System.nanoTime();
+	    sum1i += (endTime1i - startTime1i);
+
 	    long startTime1 = System.nanoTime();
 	    test.sort(arr1);
 	    long endTime1 = System.nanoTime();
 	    sum1 += (endTime1 - startTime1);
-
+	    
 	    long startTime2 = System.nanoTime();
 	    test.sort(arr2);
 	    long endTime2 = System.nanoTime();
@@ -119,10 +210,30 @@ public class MergeSortTester
 	    test.sort(arr4);
 	    long endTime4 = System.nanoTime();
 	    sum4 += (endTime4 - startTime4);
+
+
 	}
-	System.out.println("Size: 10 million");
-	System.out.println("Mean Time: " + (sum/10) / 1000000f);
-	System.out.println("Size: 1000");
+	/*	System.out.println("Size: 10 million");
+		System.out.println("Mean Time: " + (sum/10) / 1000000f); */
+	System.out.println("Size: 9000"); 
+	System.out.println("Mean Time: " + (sum1a/10) / 1000000f);
+	System.out.println("Size: 8000"); 
+	System.out.println("Mean Time: " + (sum1b/10) / 1000000f);
+	System.out.println("Size: 7000"); 
+	System.out.println("Mean Time: " + (sum1c/10) / 1000000f);
+	System.out.println("Size: 6000"); 
+	System.out.println("Mean Time: " + (sum1d/10) / 1000000f);
+	System.out.println("Size: 5000"); 
+	System.out.println("Mean Time: " + (sum1e/10) / 1000000f);
+	System.out.println("Size: 4000"); 
+	System.out.println("Mean Time: " + (sum1f/10) / 1000000f);
+	System.out.println("Size: 3000"); 
+	System.out.println("Mean Time: " + (sum1g/10) / 1000000f);
+	System.out.println("Size: 2000"); 
+	System.out.println("Mean Time: " + (sum1h/10) / 1000000f);
+	System.out.println("Size: 1000"); 
+	System.out.println("Mean Time: " + (sum1i/10) / 1000000f);
+	System.out.println("Size: 500"); 
 	System.out.println("Mean Time: " + (sum1/10) / 1000000f);
 	System.out.println("Size: 100");
 	System.out.println("Mean Time: " + (sum2/10) / 1000000f);
@@ -130,6 +241,7 @@ public class MergeSortTester
 	System.out.println("Mean Time: " + (sum3/10) / 1000000f);
 	System.out.println("Size: 1");
 	System.out.println("Mean Time: " + (sum4/10) / 1000000f);
+
     }//end main
 
 }//end class
