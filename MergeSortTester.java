@@ -13,6 +13,7 @@
   nlog(n)
   At each level 
   Mean execution times for dataset of size n:
+<<<<<<< HEAD
   Batch size: <10>
   n=1       time: 
   n=10      time: 
@@ -20,6 +21,15 @@
   n=1000    time: 
   ...
   n=1000000   time: 187.10117 ms
+=======
+  Batch size: <# of times each dataset size was run>
+  n=1       time: 1.3 x 10^-4 milliseconds
+  n=10      time: 0.0011 milliseconds
+  n=100     time: 0.014 milliseconds
+  n=1000    time: 0.15 milliseconds
+  ...
+  n=<huge>  time: > 94 milliseconds
+>>>>>>> 057e0fc54d1f7c23d5e8711390ed0101a9223185
 
 HYPOTHESIS:
 Classification for MergeSort as nlog(n):
@@ -53,7 +63,10 @@ Because there are log(n) recursive levels each operating at linear n time, the o
 
 
   ANALYSIS:
-  <INSERT YOUR RESULTS ANALYSIS HERE>
+  Running the program, I calculated the mean of 10 runs of arrays that are in the size of 1, 10, 100, 1000, etc. Generating these
+  numbers, You can find that the results is as predicted and that the 1 array list size takes around 1.3 * 10^-4 milliseconds to run. While 
+  the 10 million list size takes around 99 milliseconds. While the the smaller array list sizes have means that are close to each other, the 10 million array
+  list size one, can alternate from 50 milliseconds to 130 milliseconds. 
   ======================================*/
 import java.lang.*;
 
@@ -213,6 +226,7 @@ public class MergeSortTester
 
 
 	}
+<<<<<<< HEAD
 	/*	System.out.println("Size: 10 million");
 		System.out.println("Mean Time: " + (sum/10) / 1000000f); */
 	System.out.println("Size: 9000"); 
@@ -234,6 +248,12 @@ public class MergeSortTester
 	System.out.println("Size: 1000"); 
 	System.out.println("Mean Time: " + (sum1i/10) / 1000000f);
 	System.out.println("Size: 500"); 
+=======
+
+	System.out.println("Size: 10 million");
+	System.out.println("Mean Time: " + (sum/10) / 1000000f);
+	System.out.println("Size: 1000");
+>>>>>>> 057e0fc54d1f7c23d5e8711390ed0101a9223185
 	System.out.println("Mean Time: " + (sum1/10) / 1000000f);
 	System.out.println("Size: 100");
 	System.out.println("Mean Time: " + (sum2/10) / 1000000f);
@@ -241,7 +261,11 @@ public class MergeSortTester
 	System.out.println("Mean Time: " + (sum3/10) / 1000000f);
 	System.out.println("Size: 1");
 	System.out.println("Mean Time: " + (sum4/10) / 1000000f);
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 057e0fc54d1f7c23d5e8711390ed0101a9223185
     }//end main
 
 }//end class
