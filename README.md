@@ -1,4 +1,9 @@
 # JVN
+Jeffrey Weng
+Noah Tang
+Victor Teoh
+APCS2 pd3
+
 Hw#07
 Data x in size of the list y in miliseconds taken to run
 
