@@ -1,10 +1,10 @@
 # JVN
-Jeffrey Weng
-Noah Tang
-Victor Teoh
+Jeffrey Weng <br />
+Noah Tang <br />
+Victor Teoh <br />
 APCS2 pd3
 
-Hw#07
+Hw#07 <br />
 Data x in size of the list y in miliseconds taken to run
 
 <img height = "350" src = "https://github.com/DevJW2/JVN/blob/master/pictures/data.png?raw=true">
