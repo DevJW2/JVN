@@ -1,3 +1,4 @@
+
 //Jeffrey Weng, Noah Tang, Victor Teoh
 //APCS2 pd3
 //HW07 -- What Does the Data Say?
@@ -81,8 +82,6 @@ average time mergeSort goes through, converting it from nanotime to milliseconds
 calculating the average of these runs. 
      ******************************/
     
-    public static void main( String[] args ) 
-    {
 
 
 	/*
@@ -263,36 +262,37 @@ calculating the average of these runs.
 	System.out.println("Mean Time: " + (sum4/10) / 1000000f);
 	*/
 
-
-	public static int[] populateArr(int[] arr, int length){
-	    for(int i = 0; i < length; i++){
-		arr[i] = (int)(Math.random() * (length - 1)) + 1;
-	    }
-	    return arr;
+    
+    public static int[] populateArr(int[] arr, int length){
+	for(int i = 0; i < length; i++){
+	    arr[i] = (int)(Math.random() * (length - 1)) + 1;
 	}
+	return arr;
+    }
 
-	public static double calculateTime(int len){  
-	    int[] arr = new int[len];
-	    populateArr(arr, len);
-	    long startTime = System.nanoTime();
-	    Mergesort.sort(arr);
-	    long endTime = System.nanoTime();
-	    long duration = endTime - startTime;
-	    double durationM = duration/1000000f;
+    public static double calculateTime(int len){  
+	int[] arr = new int[len];
+	populateArr(arr, len);
+	long startTime = System.nanoTime();
+	MergeSort.sort(arr);
+	long endTime = System.nanoTime();
+	long duration = endTime - startTime;
+	double durationM = duration/1000000f;
 
-	    return durationM;
+	return durationM;
+    }
+
+    public static double calculateTimeA(int len){
+	double sum = 0;
+	for (int i = 0; i < 20; i++){
+	    sum += calculateTime(i);
 	}
-
-	public static double calculateTimeA(int len){
-	    double sum = 0;
-	    for (int i = 0; i < 20; i++){
-		sum += calculateTime(i);
-	    }
-	    return sum/20;
-	}
-
+	return sum/20;
+    }
+    public static void main( String[] args ) 
+    {
 	for (int i = 1; i <= 10000000; i*=10){
-	    System.out.println("time:  " + i + ": " + calculatetTimeA(i)); }
+	    System.out.println("time:  " + i + ": " + calculateTimeA(i)); }
 	
 
 	

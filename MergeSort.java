@@ -63,7 +63,7 @@ public class MergeSort {
      ******************************************************/
     public static int[] sort( int[] arr ) 
     {
-	if( arr.length == 1){
+	if( arr.length <= 1){
 	    return arr;
 	}
 	int ctr = 0; int[] a = new int[arr.length/2]; int[] b = new int[arr.length - arr.length/2];
