@@ -14,7 +14,7 @@
   nlog(n)
   At each level 
   Mean execution times for dataset of size n:
-<<<<<<< HEAD
+
   Batch size: <10>
   n=1       time: 
   n=10      time: 
@@ -22,7 +22,7 @@
   n=1000    time: 
   ...
   n=1000000   time: 187.10117 ms
-=======
+
   Batch size: <# of times each dataset size was run>
   n=1       time: 1.3 x 10^-4 milliseconds
   n=10      time: 0.0011 milliseconds
@@ -30,7 +30,7 @@
   n=1000    time: 0.15 milliseconds
   ...
   n=<huge>  time: > 94 milliseconds
->>>>>>> 057e0fc54d1f7c23d5e8711390ed0101a9223185
+
 
 HYPOTHESIS:
 Classification for MergeSort as nlog(n):
@@ -265,7 +265,7 @@ calculating the average of these runs.
     
     public static int[] populateArr(int[] arr, int length){
 	for(int i = 0; i < length; i++){
-	    arr[i] = (int)(Math.random() * (length - 1)) + 1;
+	    arr[i] = (int)(Math.random() * (length - 1)) + 1; 
 	}
 	return arr;
     }
@@ -277,15 +277,14 @@ calculating the average of these runs.
 	MergeSort.sort(arr);
 	long endTime = System.nanoTime();
 	long duration = endTime - startTime;
-	double durationM = duration/1000000f;
 
-	return durationM;
+	return duration/1000000f;
     }
 
     public static double calculateTimeA(int len){
 	double sum = 0;
 	for (int i = 0; i < 20; i++){
-	    sum += calculateTime(i);
+	    sum += calculateTime(len);
 	}
 	return sum/20;
     }
