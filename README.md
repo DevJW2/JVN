@@ -1,13 +1,10 @@
 # JVN
+
+# Team
 Jeffrey Weng <br />
 Noah Tang <br />
 Victor Teoh <br />
 APCS2 pd3
-
-Hw#07 <br />
-Data x in size of the list y in miliseconds taken to run
-
-<img height = "350" src = "https://github.com/DevJW2/JVN/blob/master/pictures/data.png?raw=true">
 
 Classification for MergeSort as nlog(n):
 
@@ -16,8 +13,8 @@ The recursive MergeSort algorithm can be broken down into
 levels, with each level representing a new series of recursive calls.
 
 (level) [1 2 3 4]
-(level) [1 2] [3 4]
-(level) [1] [2] [3] [4]
+(level) [1 2]  [3 4]
+(level) [1]  [2]  [3]  [4]
 
 The recursive calling will repeatedly call sort() on lists of half-size
 until a size of one is reached. Thus the number of levels is log base 2
@@ -45,3 +42,7 @@ This is the plot of the points and the lines of best fit using mx mx^2 and xlogb
 <img height = "500" src = "https://github.com/DevJW2/JVN/blob/master/pictures/graph.png?raw=true">
 <img height = "400" src = "https://github.com/DevJW2/JVN/blob/master/pictures/regressions.png?raw=true">
 Using the regressions given by desmos it is indicative that the algorithm is as we hypothesized runtime of O(nlogn) due to its r^2 being closest to one compared to the other canidates for its O.
+
+### Conclusion: 
+
+
