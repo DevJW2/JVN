@@ -34,9 +34,11 @@ However, the number of elements merge() is handling doubles. In the end, the cal
 Because there are log(n) recursive levels each operating at linear n time, the overall efficiency is n * log(n).
 
 ### Analysis of Times:
-This is the plot of the points and the lines of best fit using mx mx^2 and xlogbase2x
+This is the plot of the points and the lines of best fit using mx mx^2 and xlog(x).
+From the plots, it appears that our data roughly takes the shape of the linearithmic parent function. 
+
 <img height = "500" src = "https://github.com/DevJW2/JVN/blob/master/pictures/graph.PNG?raw=true">
-<img height = "400" src = "https://github.com/DevJW2/JVN/blob/master/pictures/regressions.png?raw=true">
+<img height = "400" src = "https://github.com/DevJW2/JVN/blob/master/pictures/regressions.PNG?raw=true">
 
 
 The regressions calculated by desmos appear to support our hypothesis as well as the statement that the algorithm is O(n).
