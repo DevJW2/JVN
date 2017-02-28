@@ -1,10 +1,6 @@
 # JVN
-
-# Team
-Jeffrey Weng <br />
-Noah Tang <br />
-Victor Teoh <br />
-APCS2 pd3
+APCS2 PD3 <br />
+Jeffrey Weng, Noah Tang, Victor Teoh <br />
 
 Classification for MergeSort as nlog(n):
 
@@ -37,7 +33,7 @@ However, the number of elements merge() is handling doubles. In the end, the cal
 
 Because there are log(n) recursive levels each operating at linear n time, the overall efficiency is n * log(n).
 
-### Analysis:
+### Analysis of Times:
 This is the plot of the points and the lines of best fit using mx mx^2 and xlogbase2x
 <img height = "500" src = "https://github.com/DevJW2/JVN/blob/master/pictures/graph.png?raw=true">
 <img height = "400" src = "https://github.com/DevJW2/JVN/blob/master/pictures/regressions.png?raw=true">
@@ -45,4 +41,4 @@ Using the regressions given by desmos it is indicative that the algorithm is as 
 
 ### Conclusion: 
 
-
+MergeSort is nlog(n).
