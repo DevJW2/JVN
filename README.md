@@ -36,6 +36,7 @@ Because there are log(n) recursive levels each operating at linear n time, the o
 ### Analysis of Times:
 This is the plot of the points and the lines of best fit using mx mx^2 and xlog(x).
 From the plots, it appears that our data roughly takes the shape of the linearithmic parent function. 
+We included in our data points every ten values from 1 to 991, inclusive, as well as several much, much larger values (for good measure).
 
 <img height = "500" src = "https://github.com/DevJW2/JVN/blob/master/pictures/graph.PNG?raw=true">
 <img height = "400" src = "https://github.com/DevJW2/JVN/blob/master/pictures/regressions.PNG?raw=true">
