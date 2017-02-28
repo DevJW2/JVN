@@ -46,6 +46,13 @@ The regressions calculated by desmos appear to support our hypothesis as well as
 
 Our full dataset is included as data.csv . Unfortunately we were not able to run the algorithm on lists of size greater than 10000000. Java would run out of memory.
 
+### Tester Functionality
+We initially wrote out all the tests, but thought of a better way to do it by writing helper functions to help us do repetitive tasks. The populateArr method, calculateTime method, and calculateTimeA method were all used to find times for MergeSort. We found the average of 20 trials for each array size method, populating each with populateArr. 
+
+<b>Each Method:</b><br />
+PopulateArr, took in two parameters: an int[] arr and the length of a list, and generated a random number for each element of the list.<br /> calculateTime, calculated the time it took for sort the array after populating it. <br />
+calculateTimeA found the average time for 20 trials, using MergeSort, for each array size: 10, 100, 1000, etc.
+
 ### Conclusion: 
 
 Hypothesis not rejected, MergeSort is likely nlog(n).
