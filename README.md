@@ -37,8 +37,10 @@ Because there are log(n) recursive levels each operating at linear n time, the o
 This is the plot of the points and the lines of best fit using mx mx^2 and xlogbase2x
 <img height = "500" src = "https://github.com/DevJW2/JVN/blob/master/pictures/graph.png?raw=true">
 <img height = "400" src = "https://github.com/DevJW2/JVN/blob/master/pictures/regressions.png?raw=true">
-Using the regressions given by desmos it is indicative that the algorithm is as we hypothesized runtime of O(nlogn) due to its r^2 being closest to one compared to the other canidates for its O.
+The regressions calculated by desmos appear to support our hypothesis as well as the statement that the algorithm is O(n).
+
+Our full dataset is included as data.csv . Unfortunately we were not able to run the algorithm on lists of size greater than 10000000. Java would run out of memory.
 
 ### Conclusion: 
 
-MergeSort is nlog(n).
+Hypothesis not rejected, MergeSort is likely nlog(n).

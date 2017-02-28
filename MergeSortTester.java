@@ -291,11 +291,9 @@ calculating the average of these runs.
     public static void main( String[] args ) 
     {
 	for (int i = 1; i <= 10000000; i*=10){
-	    System.out.println("time:  " + i + ": " + calculateTimeA(i)); }
-	
-
-	
-
+	    System.out.println(i + "," + calculateTimeA(i)); }
+	for (int i = 1; i <= 1000; i+=10){
+	   System.out.println(i + "," + calculateTimeA(i)); }
     }//end main
 
 }//end class
